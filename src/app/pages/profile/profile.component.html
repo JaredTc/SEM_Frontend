@@ -1,0 +1,55 @@
+<mat-card>
+    <!-- <h1>Detalles del perfil</h1> -->
+    <mat-card-content>
+        <div class="bootstrap-wrapper">
+            <div class="container">
+                <!-- <img width="200" src="../../../assets/arthur-reeder-a661056QDbc-unsplash.jpg" alt=""> -->
+                <div class="imgpost">
+                    <!-- https://images.unsplash.com/photo-1483389127117-b6a2102724ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80 -->
+                    <!-- https://www.unmc.edu/cihc/_images/faculty/default.jpg -->
+                    <!-- ../../../assets/profile.jpg -->
+                    <div class=" text-center ">
+                        <img class="profile-image"
+                        src="https://www.unmc.edu/cihc/_images/faculty/default.jpg"
+                        alt="">
+                    <h1 class="mt20 ">{{user.name}} {{user.lastname}} </h1>
+                </div>
+                    </div>
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <table class="table text-center">
+                            <tr>
+                                <td>Nombre de usuario</td>
+                                <td>{{user.username}}</td>
+                            </tr>
+                            <tr>
+                                <td>ID</td>
+                                <td>{{user.id}}</td>
+                            </tr>
+                            <tr>
+                                <td>Telefono</td>
+                                <td>{{user.phone}}</td>
+                            </tr>
+                            <tr>
+                                <td>Rol</td>
+                                <td>{{user.authorities[0].authority }}</td>
+                            </tr>
+                            <tr>
+                                <td>Estado</td>
+                                <td>{{user.enabled ? 'Activo' : 'No Activo'}}</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <mat-card-actions class="text-center">
+            <button mat-raised-button color='primary'>Actualizar</button>
+            <button mat-raised-button color='accent'>Compartir</button>
+
+        </mat-card-actions>
+    </mat-card-content>
+</mat-card>

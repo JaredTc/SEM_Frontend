@@ -1,0 +1,15 @@
+
+.nav{
+display: flex;
+justify-content: end;
+width: 100%;
+    
+}
+
+.btn-menu{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 35%;
+}
+

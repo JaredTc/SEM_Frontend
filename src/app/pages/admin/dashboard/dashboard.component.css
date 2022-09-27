@@ -1,0 +1,45 @@
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+}
+.card-dash-admin{
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    border-radius: 2%;
+    background-color: white;
+    width: 50%;
+    
+}
+
+.friends{
+    width: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    border-radius: 2%;
+    background-color: white;
+    width: 40%;
+    margin-top: 2%;
+    margin-right: 2%;
+    
+}
+.friends h1{
+    margin-left: 4%;
+    margin-top: 4%;
+}
+
+.exams{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 4%;
+}
+
+.e1{
+    width: 40%;
+    height: 200px;
+    margin-top: 2%;
+    background-color: rgb(192, 192, 192);
+    border-radius: 10%;
+ 
+}

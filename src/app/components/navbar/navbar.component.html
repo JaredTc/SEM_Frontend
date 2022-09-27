@@ -1,0 +1,46 @@
+<mat-toolbar color="primary">
+    <div>
+        <a 
+        [routerLink]="'/'" mat-icon-button class="example-icon" arial-label="Example icon button whit menu icon">
+            <!-- <mat-icon>menu_books</mat-icon> -->
+            <img src="../../../favicon.ico" alt="">
+            Portal de Examenes
+        </a>
+
+    </div>
+    <!-- <div class="logo">
+        <img src="../../../favicon.ico" alt="">
+    </div> -->
+    <div class="nav">
+
+       <div class="btn-menu">
+        <div>
+            <a *ngIf="!isLoggedIn" [routerLink]="'/login'" mat-icon-button class="Example-icon-favorite-icon"
+                aria-lablel="example icon-button with hear icon">
+                <!-- <mat-icon>login_user</mat-icon> -->
+                <span>Iniciar Sesion</span>
+            </a>
+
+        </div>
+
+        <div>
+            <a *ngIf="!isLoggedIn" [routerLink]="'/signup'" mat-icon-button class="Example-icon-favorite-icon"
+                aria-lablel="example icon-button with hear icon">
+                <!-- <mat-icon>app_registration</mat-icon> -->
+                <span>Registrarse</span>
+            </a>
+        </div>
+        <div>
+            <a *ngIf="isLoggedIn" (click)="logoUt()" mat-icon-button class="Example-icon-favorite-icon"
+                aria-lablel="example icon-button with hear icon">
+                <!-- <mat-icon>app_registration</mat-icon> -->
+                <span>Cerrar Sesion</span>
+            </a>
+        </div>
+        <button *ngIf="isLoggedIn" [routerLink]="'/admin/profile'" style="margin-left: 10px" mat-button mat-icon-button
+            class="Example-icon-favorite-icon" aria-lablel="example icon-button with hear icon">
+            {{ user.username}}
+        </button>
+       </div>
+    </div>
+</mat-toolbar>

@@ -1,0 +1,50 @@
+
+.profile-image{
+    max-width: 150px;
+    min-height: 150px;
+    /* width: 150px;
+    height: 150px; */
+    border: 2px solid gainsboro;
+    border-radius: 60%;
+    /* left: 30%;
+    position: absolute;
+    top: 28%;
+    left: 5%; */
+   
+}
+.profile{
+    display: flex;
+    flex-direction: row;
+}
+.h-1{
+    position: absolute;
+    font-weight: bold;
+    top: 34%;
+    left: 24%;
+    font-size: 30px;
+}
+.imgpost{
+    /* height: 220px;
+    background-image: url("../../../assets/arthur-reeder-a661056QDbc-unsplash.jpg");
+    background-repeat: no-repeat, repeat;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;  */
+}
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table tr td{
+    padding: 15px 10px;
+    border: 0.5px solid gainsboro;
+}
+
+.contenido{
+    display: flex;
+    text-align: center;
+    border: 1px solid black;
+    width: 100%;
+}
+
